@@ -15,12 +15,8 @@ body{
     display: flex;
     justify-content: center;
     margin: -230px 0px;
-
-   
-
-
-   
 }
+
 .search-bar{
   width: 100%;
   max-width: 400px;

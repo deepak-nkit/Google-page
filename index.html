@@ -1,30 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>google  page</title>
-</head> 
+    <title>google page</title>
+
+    <style>
+        .search-center { /* body = parent */
+            width: max-content;
+            margin: auto; /* Always center */
+            /* margin-top: 7%; */
+            /* flexbox */
+            /* margin: 100px;
+            padding: 50px; */
+        }
+
+        .google-logo { /* search-center = parent */
+            width: max-content;
+            margin: auto; /* parent */
+            /* parent-child */
+        }
+    </style>
+</head>
 
 <body>
-<div class="tb">
+
+
+    <!-- <div class="tb" style="border: 1px solid red"> -->
+
+
+    <!-- <div style="display: flex" >
         <a> Gmail</a>
         <a>images</a>
+    </div> -->
+
+    <!-- Center -->
+    <!-- Center -->
+
+    <!-- ================================= Now -->
+        <!-- 25px  gmail/images -->
+        <!-- 100vh div.flex -->
+        <!-- Page height: 25px + 100vh -->
+    <!-- ================================= Later -->
+        <!-- 25px gmail/images -->
+        <!-- 100vh - 25px -->
+
+    <!-- ================================= -->
+        <!-- div height: 100vh  display: flex -->
+            <!-- gmail/images: 25px     flex-grow: 0 -->
+            <!-- div.logo:              flex-grow: 1 -->
+        <!-- /div -->
+
+        <!--
+                (flex-grow: 1, flex-grow: 2, flex-grow: 0)
+        100px:        33.3px      66.6px         0px
+
+        -->
+
+    <!-- ================================= Now -->
+    <div style="height: 100vh; display: flex">
+        <div style="border: 1px solid red; height: 25px; flex-grow: 0;">
+            <a> Gmail</a>
+            <a>images</a>
         </div>
-    
-    <div class="google">
-     <img  height ="92"  src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
-    </div>
-    <div class ="container">
-        <form action="" class="search-bar">
-        <input type="text" placeholder="search" name="s "> 
-        <button type="submit"><img src ="search.png1.png"></button>
-        
-      
-        </form>
+
+        <div style="display: flex; justify-items: center; flex-grow: 1; padding-bottom: 80px;">
+            <div class="search-center">
+
+            <!-- </div> style="border: 1px solid red"> -->
+                <!-- Size -->
+                <!-- Part 1 -->
+                <!-- <div class="google"> -->
+                <div class="google-logo">
+                    <img height="92" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
+                </div>
+
+                <!-- Part 2 -->
+                <div>
+                    <form action="" class="search-bar">
+                        <!-- Search button -->
+                        <input type="text" placeholder="search" name="s ">
+                        <!-- <button>sdlfkjdslfkj </button> -->
+                        <img height="40" src="search.png1.png">
+                        <!-- <button type="submit"><img src="search.png1.png"></button> -->
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 
-</html> 
+</html>
