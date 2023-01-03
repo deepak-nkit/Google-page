@@ -61,20 +61,7 @@ flex: 0px;
   
 }
 
-.tb{
-  width: 10px;
-  padding: 0% 850px;
-  margin: 3px 100px;
-  font-size: 20px;
-  height: auto;
-  align-items: center;
-  display: flex;
-}
-.tb a{
-  padding: 50px 3px;
-  font: 50px;
-  margin: 20px 5px;
-}
+
 
 .google{
   padding: 30px  20px;

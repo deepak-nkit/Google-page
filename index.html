@@ -22,7 +22,18 @@
             width: max-content;
             margin: auto; /* parent */
             /* parent-child */
+            
         }
+        
+        .topbar{
+           
+           
+            display: flex;
+            justify-content: flex-end;
+            
+           
+        }
+        
     </style>
 </head>
 
@@ -61,10 +72,15 @@
         -->
 
     <!-- ================================= Now -->
-    <div style="height: 100vh; display: flex">
+    <div style="height: 100vh;">
         <div style="border: 1px solid red; height: 25px; flex-grow: 0;">
-            <a> Gmail</a>
-            <a>images</a>
+            <div class="topbar">
+
+                <a> Gmail</a>
+
+                <a>images</a>
+
+            </div>
         </div>
 
         <div style="display: flex; justify-items: center; flex-grow: 1; padding-bottom: 80px;">
