@@ -9,30 +9,67 @@
     <title>google page</title>
 
     <style>
-        .search-center { /* body = parent */
+        .search-center {
+            /* body = parent */
             width: max-content;
-            margin: auto; /* Always center */
+            margin: auto;
+            /* Always center */
             /* margin-top: 7%; */
             /* flexbox */
             /* margin: 100px;
             padding: 50px; */
+            padding-top: 25vh;
+
         }
 
-        .google-logo { /* search-center = parent */
+        .google-logo {
+            /* search-center = parent */
             width: max-content;
-            margin: auto; /* parent */
+            margin: auto;
+            /* parent */
             /* parent-child */
+
+
+        }
+
+        .topbar {
+            display: flex;
+            justify-content: flex-end;
+            margin: 2px 4px;
+        }
+
+        .master{
+
+            background-color: #f2f2f2;
+            padding-bottom: 1px solid #dadce0;
+            color: #70757a;
             
         }
         
-        .topbar{
-           
-           
-            display: flex;
-            justify-content: flex-end;
+        .root{
+            width: auto;
+            font-size: 15px;
+            padding:15px 30px;
+            border-bottom: 1px solid #dadce0;
             
-           
         }
+        .bottom{
+            width: auto;
+            font-size: 15px;
+            padding: 0px 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+                 
+        }
+        .bottom a{
+            padding: 10px 10px;
+            
+        }
+
+        
+
+        
         
     </style>
 </head>
@@ -52,20 +89,20 @@
     <!-- Center -->
 
     <!-- ================================= Now -->
-        <!-- 25px  gmail/images -->
-        <!-- 100vh div.flex -->
-        <!-- Page height: 25px + 100vh -->
+    <!-- 25px  gmail/images -->
+    <!-- 100vh div.flex -->
+    <!-- Page height: 25px + 100vh -->
     <!-- ================================= Later -->
-        <!-- 25px gmail/images -->
-        <!-- 100vh - 25px -->
+    <!-- 25px gmail/images -->
+    <!-- 100vh - 25px -->
 
     <!-- ================================= -->
-        <!-- div height: 100vh  display: flex -->
-            <!-- gmail/images: 25px     flex-grow: 0 -->
-            <!-- div.logo:              flex-grow: 1 -->
-        <!-- /div -->
+    <!-- div height: 100vh  display: flex -->
+    <!-- gmail/images: 25px     flex-grow: 0 -->
+    <!-- div.logo:              flex-grow: 1 -->
+    <!-- /div -->
 
-        <!--
+    <!--
                 (flex-grow: 1, flex-grow: 2, flex-grow: 0)
         100px:        33.3px      66.6px         0px
 
@@ -73,25 +110,26 @@
 
     <!-- ================================= Now -->
     <div style="height: 100vh;">
-        <div style="border: 1px solid red; height: 25px; flex-grow: 0;">
+        <div style=" height: 25px; flex-grow: 0;">
             <div class="topbar">
 
-                <a> Gmail</a>
+                <a> Gmail &nbsp;&nbsp;</a>
 
                 <a>images</a>
 
             </div>
         </div>
 
-        <div style="display: flex; justify-items: center; flex-grow: 1; padding-bottom: 80px;">
+        <div style="display: flex; justify-content: center;flex-grow:1; padding-bottom: 80px;">
             <div class="search-center">
 
-            <!-- </div> style="border: 1px solid red"> -->
+                <!-- </div> style="border: 1px solid red"> -->
                 <!-- Size -->
                 <!-- Part 1 -->
                 <!-- <div class="google"> -->
                 <div class="google-logo">
-                    <img height="92" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
+                    <img height="92"
+                        src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
                 </div>
 
                 <!-- Part 2 -->
@@ -105,8 +143,40 @@
                     </form>
                 </div>
             </div>
+
+
         </div>
     </div>
+
+    <div style="height: 1vh;">
+        <div class="master">
+            <div class="root">
+                <a>india</a>
+            </div>
+            <div style="flex-grow: 0; ">
+                <div class="bottom">
+                    <a>About</a>
+                    <a>Advertising</a>
+                    <a>Business</a>
+                    <a>How Search Work &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                    </a>  
+                    
+                    <a>Privacy</a>
+                    <a>Terms</a>
+                    <a>Settings</a>
+                </div>
+
+        </div>   
+
+        </div>
+
+    </div>
+
+
+
+
+
+
 </body>
 
 </html>
